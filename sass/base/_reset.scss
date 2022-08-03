@@ -1,0 +1,61 @@
+/* Reset */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+/* Обнулення базових властивостей у ссилки */
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Обнулення властивостей UL */
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Властивість для правильного відображення картинки */
+
+// img {
+//     display: block;
+//     max-width: 100%;
+//     height: auto;
+// }
+
+/* Властивість для заборони зміни розміра поля вводу */
+
+textarea {
+    resize: none;
+}
+
+/* Властивість для обнулення курсива address */
+
+address {
+    font-style: normal;
+        display: flex;
+        align-items: center;
+        padding-left: 0px;
+}
+
+/* Обнулення заголовків (верхніх відступів) */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}

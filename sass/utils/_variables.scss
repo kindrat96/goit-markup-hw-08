@@ -1,0 +1,42 @@
+:root {
+
+    /* Базовий фон */
+    --base-background-color: #ffffff;
+
+    /*Hero + footer */
+    --background-hero-footer: #2f303a;
+
+    /* Фон сірий для частини секцій */
+    --background-section: #f5f4fa;
+
+    /* Фон головної кнопки */
+    --background-color-button: #188ce8;
+
+    /* Головний колір тексту (заголовки) 212121 */
+    --primary-text-color: #212121;
+
+    /* Додатковий колір тексту (наповнення) 757575 */
+    --secondary-text-color: #757575;
+
+    /* Основний колір іконок */
+    --icon-color: #afb1b8;
+
+    /*  Білий колір FFFFFF */
+    --full-white-color: #ffffff;
+
+    /* Footer адрес */
+    --partial-white-color: rgba(255, 255, 255, 0.6);
+
+    /* Голубий колір 2196F3 */
+    --accent-color: #2196f3;
+
+    /* Для логотипу */
+    --black-color: #000000;
+
+    /*Анімація для project__link в портфоліо*/
+    --project__link-animation: #eeeeee;
+
+    /* Основний шрифт */
+    --main-font: Roboto;
+    --secondary-font: Raleway;
+}
