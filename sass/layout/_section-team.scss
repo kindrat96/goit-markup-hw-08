@@ -1,0 +1,68 @@
+/* Наша команда */
+
+.team {
+  background-color: var(--background-section);
+
+  &__list {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    width: 100%;
+    margin: 15px;
+    background-color: var(--base-background-color);
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__card {
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
+
+  &__name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+  }
+
+  &__profession {
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.19;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .team {
+    &__link {
+      width: calc((100% - 4 * 15px) / 2);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    &__title {
+      margin-bottom: 50px;
+    }
+
+    &__link {
+      width: calc((100% - 8 * 15px) / 4);
+    }
+
+    &__card {
+      padding-bottom: 30px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import './base/reset';
+@import './base/common';
+@import './utils/variables.scss';
+@import './utils/mixin';
+
+@import './components/logo-webstudio';
+@import './layout/header';
+@import './layout/section-hero';
+@import './components/button';
+@import './components/section-features';
+@import './components/section-example';
+@import './layout/section-team';
+@import './components/icons';
+@import './components/section-social';
+@import './layout/section-clients';
+@import './components/modal-page';
+@import './layout/footer';
+@import './layout/portfolio-page';
