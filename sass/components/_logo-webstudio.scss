@@ -1,0 +1,36 @@
+/* Logo header and footer */
+
+.logo {
+  text-decoration: none;
+  padding-bottom: 16px;
+  padding-top: 16px;
+
+  &__text {
+    font-family: var(--secondary-font);
+    font-size: 24px;
+    line-height: 1.19;
+    font-weight: 700;
+  }
+
+  &__text--blue {
+    color: var(--accent-color);
+  }
+
+  &__text--black {
+    color: var(--black-color);
+  }
+
+  &__text--white {
+    color: var(--full-white-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    &__text {
+      font-size: 26px;
+      line-height: 1.19;
+      font-weight: 700;
+    }
+  }
+}
