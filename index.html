@@ -19,6 +19,7 @@
   </head>
 
   <body>
+    
     <!--Header-->
 
     <header class="header">
@@ -26,54 +27,78 @@
         <nav class="menu">
           <a href="./index.html" class="logo"
             ><span class="logo__text logo__text--blue">Web</span
-            ><span class="logo__text logo__text--black">Studio</span></a
-          >
-          <ul class="menu__list list">
-            <li class="menu__item">
-              <a href="./index.html" class="link menu__link menu__current">Студія</a>
-            </li>
-            <li class="menu__item">
-              <a href="./portfolio.html" class="link menu__link">Портфоліо</a>
-            </li>
-            <li class="menu__item">
-              <a href="" class="link menu__link">Контакти</a>
-            </li>
-          </ul>
-          <button class="menu-button is-open" aria-expanded="false" type="button" data-menu-button>
-            <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+            ><span class="logo__text logo__text--black">Studio</span>
+          </a>
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="menu__list list">
+              <li class="menu__item">
+                <a href="./index.html" class="link menu__link menu__current">Студія</a>
+              </li>
+              <li class="menu__item">
+                <a href="./portfolio.html" class="link menu__link">Портфоліо</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="link menu__link">Контакти</a>
+              </li>
+            </ul>
+            <div class="menu-container__connect-info">
+              <ul class="contacts list">
+                <li class="contacts__item">
+                  <a href="mailto:info@devstudio.com" class="link contacts__link">
+                    <svg
+                      class="icon contacts__icon menu-button__icon"
+                      aria-hidden="true"
+                      width="16px"
+                      height="12px"
+                    >
+                      <use href="./images/icons.svg#icon-mail"></use>
+                    </svg>
+                    info@devstudio.com</a
+                  >
+                </li>
+                <li class="contacts__item">
+                  <a href="tel:+380961111111" class="link contacts__link">
+                    <svg
+                      class="icon contacts__icon menu-button__icon"
+                      aria-hidden="true"
+                      width="10px"
+                      height="16px"
+                    >
+                      <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                    +38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+              <ul class="menu-socials">
+                <li class="menu-socials__item">
+                  <a class="menu-socials__link" href="#">Instagram</a>
+                </li>
+                <li class="menu-socials__item">
+                  <a class="menu-socials__link menu-socials__link-with-divide" href="#">Twitter</a>
+                </li>
+                <li class="menu-socials__item">
+                  <a class="menu-socials__link menu-socials__link-with-divide" href="#">Facebook</a>
+                </li>
+                <li class="menu-socials__item">
+                  <a class="menu-socials__link menu-socials__link-with-divide" href="#">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button class="menu-button" aria-expanded="false" type="button" data-menu-button>
+            <svg
+              class="menu-button__icon"
+              width="40px"
+              height="40px"
+              aria-label="Перемикач мобільного меню"
+            >
               <use class="menu-button__icon-close" href="./images/icons.svg#header-w-close"></use>
               <use class="menu-button__icon-open" href="./images/icons.svg#header-w-menu"></use>
             </svg>
           </button>
         </nav>
-
-        <!-- Contacts -->
-
-        <ul class="contacts list">
-          <li class="contacts__item">
-            <a href="mailto:info@devstudio.com" class="link contacts__link">
-              <svg class="icon contacts__icon" aria-hidden="true" width="16px" height="12px">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts__item">
-            <a href="tel:+380961111111" class="link contacts__link">
-              <svg class="icon contacts__icon" aria-hidden="true" width="10px" height="16px">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
       </div>
-
-
-
-
-
-
     </header>
 
     <!-- Hero -->
@@ -99,7 +124,7 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="features__head">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <h2 class="features__head">УВАГА ДО ДЕТАЛЕЙ</h2>
               <p class="features__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
@@ -110,7 +135,7 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="features__head">ПУНКТУАЛЬНІСТЬ</h3>
+              <h2 class="features__head">ПУНКТУАЛЬНІСТЬ</h2>
               <p class="features__text">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
@@ -132,7 +157,7 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="features__head">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <h2 class="features__head">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
               <p class="features__text">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
@@ -149,22 +174,37 @@
           <ul class="list example__list">
             <li class="example__item">
               <div class="example__image-wrap">
-                <img src="./images/img_1.jpg" alt="бокс1" width="370"
-                /></a>
+                <img
+                  srcset="./images/activity-cards/desktop-applications@2x.jpg 2x"
+                  src="./images/activity-cards/desktop-applications.jpg"
+                  alt="Людина пише код в програмі на ноутбуці при використанні накресленої на аркуші схеми"
+                  width="370"
+                  height="294"
+                />
                 <p class="example__text">Десктопні додатки</p>
               </div>
             </li>
             <li class="example__item">
               <div class="example__image-wrap">
-                <img src="./images/img_2.jpg" alt="бокс2" width="370"
-                /></a>
+                <img
+                  srcset="./images/activity-cards/mobile-applications@2x.jpg 2x"
+                  src="./images/activity-cards/mobile-applications.jpg"
+                  alt="Людина обирає в програмі на ноутбуці один з варіантів розташування додатків на зображеннях трьох смартфонів, тримаючи при цьому в руці справжній смартфон"
+                  width="370"
+                  height="294"
+                />
                 <p class="example__text">Мобільні додатки</p>
               </div>
             </li>
             <li class="example__item">
               <div class="example__image-wrap">
-                <img src="./images/img_3.jpg" alt="бокс3" width="370"
-                /></a>
+                <img
+                  srcset="./images/activity-cards/design-solutions@2x.jpg 2x"
+                  src="./images/activity-cards/design-solutions.jpg"
+                  alt="Людина тримає планшет і в спеціальній програмі стілусом обирає колір з палітри"
+                  width="370"
+                  height="294"
+                />
                 <p class="example__text">Дизайнерські рішення</p>
               </div>
             </li>
@@ -180,8 +220,37 @@
           <ul class="team__list list">
             <!-- Team -->
 
+            <!-- <li class="team__link"> -->
+
             <li class="team__link">
-             <img src="./images/img_4.jpg" alt="Игорь" width="270" /></a>
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-members/igor-demyanenko-450.jpg    1x,
+                    ./images/team-members/igor-demyanenko-450@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-members/igor-demyanenko-354.jpg    1x,
+                    ./images/team-members/igor-demyanenko-354@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-members/igor-demyanenko-270.jpg    1x,
+                    ./images/team-members/igor-demyanenko-270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="team-member__image"
+                  src="./images/team-members/igor-demyanenko-450.jpg"
+                  alt="Ігор Дем'яненко"
+                />
+              </picture>
               <div class="team__card social">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__profession">Product Designer</p>
@@ -244,7 +313,34 @@
             <!-- Team -->
 
             <li class="team__link">
-              <a href=""> <img src="./images/img_5.jpg" alt="Ольга" width="270" /></a>
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-members/olga-repina-450.jpg    1x,
+                    ./images/team-members/olga-repina-450@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-members/olga-repina-354.jpg    1x,
+                    ./images/team-members/olga-repina-354@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-members/olga-repina-270.jpg    1x,
+                    ./images/team-members/olga-repina-270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="team-member__image"
+                  src="./images/team-members/olga-repina-450.jpg"
+                  alt="Ольга Рєпіна"
+                />
+              </picture>
               <div class="team__card social">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__profession">Frontend Developer</p>
@@ -307,7 +403,34 @@
             <!-- Team -->
 
             <li class="team__link">
-              <a href=""> <img src="./images/img_6.jpg" alt="Николай" width="270" /></a>
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-members/mykola-tarasov-450.jpg    1x,
+                    ./images/team-members/mykola-tarasov-450@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-members/mykola-tarasov-354.jpg    1x,
+                    ./images/team-members/mykola-tarasov-354@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-members/mykola-tarasov-270.jpg    1x,
+                    ./images/team-members/mykola-tarasov-270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="team-member__image"
+                  src="./images/team-members/mykola-tarasov-450.jpg"
+                  alt="Микола Тарасов"
+                />
+              </picture>
               <div class="team__card social">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__profession">Marketing</p>
@@ -370,7 +493,34 @@
             <!-- Team -->
 
             <li class="team__link">
-              <a href=""> <img src="./images/img_7.jpg" alt="Михаил" width="270" /></a>
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-members/mihkaylo-ermakov-450.jpg    1x,
+                    ./images/team-members/mihkaylo-ermakov-450@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-members/mihkaylo-ermakov-354.jpg    1x,
+                    ./images/team-members/mihkaylo-ermakov-354@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-members/mihkaylo-ermakov-270.jpg    1x,
+                    ./images/team-members/mihkaylo-ermakov-270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="team-member__image"
+                  src="./images/team-members/mihkaylo-ermakov-450.jpg"
+                  alt="Михайло Єрмаков"
+                />
+              </picture>
               <div class="team__card social">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__profession">UI Designer</p>
