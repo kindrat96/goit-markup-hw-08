@@ -1039,12 +1039,12 @@ body {
 
 @media screen and (max-width: 779px) {
     .footer__wrap {
-        width: 100%
+        /* width: 100% */
     }
 }
 
 .footer__logo-wrap {
-    /* margin-bottom: 20px; */
+    margin-bottom: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1076,7 +1076,7 @@ body {
 }
 
 .address {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1118,6 +1118,7 @@ body {
 }
 
 .address__contacts {
+    margin-top: 5px;
     text-decoration: none;
     font-style: normal;
     line-height: 1.71;
@@ -1273,7 +1274,8 @@ body {
 
 @media screen and (min-width: 480px) {
     .modal {
-        width: 480px
+            width: 100%;
+    max-width: 450px;
     }
 }
 
